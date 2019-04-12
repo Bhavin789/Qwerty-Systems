@@ -14,6 +14,7 @@
 		99E42D532260EBDE00AB501B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E42D512260EBDE00AB501B /* LaunchScreen.storyboard */; };
 		99E42D5E2260EBE200AB501B /* Qwerty_SystemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E42D5D2260EBE200AB501B /* Qwerty_SystemsTests.swift */; };
 		99E42D692260EBE200AB501B /* Qwerty_SystemsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E42D682260EBE200AB501B /* Qwerty_SystemsUITests.swift */; };
+		99E42D772260F38D00AB501B /* VideoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E42D762260F38D00AB501B /* VideoListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		99E42D642260EBE200AB501B /* Qwerty SystemsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Qwerty SystemsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E42D682260EBE200AB501B /* Qwerty_SystemsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qwerty_SystemsUITests.swift; sourceTree = "<group>"; };
 		99E42D6A2260EBE200AB501B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99E42D762260F38D00AB501B /* VideoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		99E42D472260EB9800AB501B /* Qwerty Systems */ = {
 			isa = PBXGroup;
 			children = (
+				99E42D782260F3BA00AB501B /* Controller */,
 				99E42D482260EB9800AB501B /* AppDelegate.swift */,
 				99E42D4A2260EB9900AB501B /* ViewController.swift */,
 				99E42D4C2260EB9900AB501B /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				99E42D6A2260EBE200AB501B /* Info.plist */,
 			);
 			path = "Qwerty SystemsUITests";
+			sourceTree = "<group>";
+		};
+		99E42D782260F3BA00AB501B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				99E42D762260F38D00AB501B /* VideoListTableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99E42D4B2260EB9900AB501B /* ViewController.swift in Sources */,
+				99E42D772260F38D00AB501B /* VideoListTableViewController.swift in Sources */,
 				99E42D492260EB9800AB501B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V2XCNE93DB;
 				INFOPLIST_FILE = "Qwerty Systems/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V2XCNE93DB;
 				INFOPLIST_FILE = "Qwerty Systems/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
