@@ -10,6 +10,14 @@ import UIKit
 
 class VideoInfoTableViewCell: UITableViewCell {
     
+    var videoItem: VideoItem?{
+        didSet{
+            detailTextLabel?.text = videoItem?.videoDescription
+            textLabel?.text = videoItem?.title
+            setupVideoImage(videoItem: videoItem)
+        }
+    }
+    
     let videoImage: UIImageView = {
         let videoImage = UIImageView()
         videoImage.image = UIImage(named: "initialProfileImage")
@@ -19,7 +27,12 @@ class VideoInfoTableViewCell: UITableViewCell {
         return videoImage
     }()
     
-    private func setupTitleAndVideoImage(){}
+    private func setupVideoImage(videoItem: VideoItem?){
+        if let videoThumbnailUrl = videoItem?.thumbnailUrl{
+            self.videoImage.loadImageUsingCacheWithUrlString(urlString: videoThumbnailUrl as! String)
+            
+        }
+    }
     
     override func layoutSubviews() {
         super.layoutSubviews()

@@ -16,6 +16,8 @@
 		99E42D692260EBE200AB501B /* Qwerty_SystemsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E42D682260EBE200AB501B /* Qwerty_SystemsUITests.swift */; };
 		99E42D772260F38D00AB501B /* VideoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E42D762260F38D00AB501B /* VideoListTableViewController.swift */; };
 		99E42D7B2260FA6500AB501B /* VideoInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E42D7A2260FA6500AB501B /* VideoInfoTableViewCell.swift */; };
+		99E42D7F2260FF2500AB501B /* VideoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E42D7E2260FF2500AB501B /* VideoItem.swift */; };
+		99E42D812261183D00AB501B /* Extenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E42D802261183D00AB501B /* Extenions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		99E42D6A2260EBE200AB501B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99E42D762260F38D00AB501B /* VideoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListTableViewController.swift; sourceTree = "<group>"; };
 		99E42D7A2260FA6500AB501B /* VideoInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoInfoTableViewCell.swift; sourceTree = "<group>"; };
+		99E42D7E2260FF2500AB501B /* VideoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoItem.swift; sourceTree = "<group>"; };
+		99E42D802261183D00AB501B /* Extenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		99E42D472260EB9800AB501B /* Qwerty Systems */ = {
 			isa = PBXGroup;
 			children = (
+				99E42D7C2260FE4F00AB501B /* Model */,
 				99E42D792260F76C00AB501B /* View */,
 				99E42D782260F3BA00AB501B /* Controller */,
 				99E42D482260EB9800AB501B /* AppDelegate.swift */,
@@ -109,6 +114,7 @@
 				99E42D4F2260EBDE00AB501B /* Assets.xcassets */,
 				99E42D512260EBDE00AB501B /* LaunchScreen.storyboard */,
 				99E42D542260EBDE00AB501B /* Info.plist */,
+				99E42D802261183D00AB501B /* Extenions.swift */,
 			);
 			path = "Qwerty Systems";
 			sourceTree = "<group>";
@@ -145,6 +151,14 @@
 				99E42D7A2260FA6500AB501B /* VideoInfoTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		99E42D7C2260FE4F00AB501B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99E42D7E2260FF2500AB501B /* VideoItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E42D7F2260FF2500AB501B /* VideoItem.swift in Sources */,
+				99E42D812261183D00AB501B /* Extenions.swift in Sources */,
 				99E42D4B2260EB9900AB501B /* ViewController.swift in Sources */,
 				99E42D7B2260FA6500AB501B /* VideoInfoTableViewCell.swift in Sources */,
 				99E42D772260F38D00AB501B /* VideoListTableViewController.swift in Sources */,
