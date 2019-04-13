@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import AVKit
 
 class VideoListTableViewController: UITableViewController {
     
@@ -16,7 +17,7 @@ class VideoListTableViewController: UITableViewController {
     private let cellId = "videoCellId"
     
     func callWebService(webURL urlString: String){
-        var url = URL(string: urlString)
+        let url = URL(string: urlString)
         var request = URLRequest(url: url!)
         request.httpMethod = "GET"
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
@@ -26,13 +27,11 @@ class VideoListTableViewController: UITableViewController {
             }
             
             if error != nil{
-                print(error?.localizedDescription)
+                print(error?.localizedDescription ?? "Error Fetching videos...")
                 return
             }
             
             let json = JSON(taskData)
-//            print(json)
-            
             let items = json["items"].arrayValue
             print(items[0])
             
@@ -56,6 +55,7 @@ class VideoListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Qwerty Systems"
+        navigationController?.navigationBar.barTintColor = UIColor.red
         tableView.register(VideoInfoTableViewCell.self, forCellReuseIdentifier: cellId)
     }
     
@@ -90,52 +90,16 @@ class VideoListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let videoItem = videoItems[indexPath.row]
+        
+        print(videoItem.getYoutubeVideoLink())
+        
+        let videoPlayerViewController = VideoPlayerViewController()
+        videoPlayerViewController.videoUrl = videoItem.getYoutubeVideoLink()
+        
+        navigationController?.pushViewController(videoPlayerViewController, animated: true)
     }
- 
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

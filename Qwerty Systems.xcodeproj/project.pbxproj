@@ -10,6 +10,7 @@
 		6754B10B1A6880C12C21D853 /* Pods_Qwerty_SystemsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FCED33B9B358FEC6AB967B /* Pods_Qwerty_SystemsTests.framework */; };
 		6BE153175DB3E32047AD7A20 /* Pods_Qwerty_SystemsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F3454086CE33859BBC497E /* Pods_Qwerty_SystemsUITests.framework */; };
 		7115D0965D13B039572D691B /* Pods_Qwerty_Systems.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B016A2286E3314DAE7275AED /* Pods_Qwerty_Systems.framework */; };
+		999AD3862261AC6E00A98223 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999AD3852261AC6D00A98223 /* VideoPlayerViewController.swift */; };
 		99E42D492260EB9800AB501B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E42D482260EB9800AB501B /* AppDelegate.swift */; };
 		99E42D4B2260EB9900AB501B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E42D4A2260EB9900AB501B /* ViewController.swift */; };
 		99E42D4E2260EB9900AB501B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E42D4C2260EB9900AB501B /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		64E6D1E3F6DE390C70ED892F /* Pods-Qwerty Systems.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qwerty Systems.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Qwerty Systems/Pods-Qwerty Systems.debug.xcconfig"; sourceTree = "<group>"; };
 		64ECB7F72B6336B77F718427 /* Pods-Qwerty Systems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qwerty Systems.release.xcconfig"; path = "Pods/Target Support Files/Pods-Qwerty Systems/Pods-Qwerty Systems.release.xcconfig"; sourceTree = "<group>"; };
 		78B20D8586655E4ED775A605 /* Pods-Qwerty SystemsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qwerty SystemsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Qwerty SystemsUITests/Pods-Qwerty SystemsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		999AD3852261AC6D00A98223 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		99E42D452260EB9800AB501B /* Qwerty Systems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Qwerty Systems.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E42D482260EB9800AB501B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99E42D4A2260EB9900AB501B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				99E42D762260F38D00AB501B /* VideoListTableViewController.swift */,
+				999AD3852261AC6D00A98223 /* VideoPlayerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				99E42D7F2260FF2500AB501B /* VideoItem.swift in Sources */,
 				99E42D812261183D00AB501B /* Extensions.swift in Sources */,
 				99E42D4B2260EB9900AB501B /* ViewController.swift in Sources */,
+				999AD3862261AC6E00A98223 /* VideoPlayerViewController.swift in Sources */,
 				99E42D7B2260FA6500AB501B /* VideoInfoTableViewCell.swift in Sources */,
 				99E42D772260F38D00AB501B /* VideoListTableViewController.swift in Sources */,
 				99E42D492260EB9800AB501B /* AppDelegate.swift in Sources */,

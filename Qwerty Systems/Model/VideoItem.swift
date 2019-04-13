@@ -26,4 +26,9 @@ class VideoItem: NSObject {
         self.videoDescription = decription
         self.thumbnailUrl = thumbnail
     }
+    
+    public func getYoutubeVideoLink() -> String {
+        let videoId = self.videoId!.replacingOccurrences(of: "\"", with: "", options: NSString.CompareOptions.literal, range:nil)
+        return "https://www.youtube.com/embed/\(videoId)"
+    }
 }
