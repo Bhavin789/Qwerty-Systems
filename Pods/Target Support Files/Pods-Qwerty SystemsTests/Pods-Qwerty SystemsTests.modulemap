@@ -1,0 +1,6 @@
+framework module Pods_Qwerty_SystemsTests {
+  umbrella header "Pods-Qwerty SystemsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6754B10B1A6880C12C21D853 /* Pods_Qwerty_SystemsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FCED33B9B358FEC6AB967B /* Pods_Qwerty_SystemsTests.framework */; };
+		6BE153175DB3E32047AD7A20 /* Pods_Qwerty_SystemsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F3454086CE33859BBC497E /* Pods_Qwerty_SystemsUITests.framework */; };
+		7115D0965D13B039572D691B /* Pods_Qwerty_Systems.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B016A2286E3314DAE7275AED /* Pods_Qwerty_Systems.framework */; };
 		99E42D492260EB9800AB501B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E42D482260EB9800AB501B /* AppDelegate.swift */; };
 		99E42D4B2260EB9900AB501B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E42D4A2260EB9900AB501B /* ViewController.swift */; };
 		99E42D4E2260EB9900AB501B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E42D4C2260EB9900AB501B /* Main.storyboard */; };
@@ -38,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0746161BD450B671BE805857 /* Pods-Qwerty SystemsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qwerty SystemsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Qwerty SystemsTests/Pods-Qwerty SystemsTests.release.xcconfig"; sourceTree = "<group>"; };
+		22EFA2B83FC7054A366963C2 /* Pods-Qwerty SystemsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qwerty SystemsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Qwerty SystemsTests/Pods-Qwerty SystemsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		33A53B6EBD0D0C427267480D /* Pods-Qwerty SystemsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qwerty SystemsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Qwerty SystemsUITests/Pods-Qwerty SystemsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		64E6D1E3F6DE390C70ED892F /* Pods-Qwerty Systems.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qwerty Systems.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Qwerty Systems/Pods-Qwerty Systems.debug.xcconfig"; sourceTree = "<group>"; };
+		64ECB7F72B6336B77F718427 /* Pods-Qwerty Systems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qwerty Systems.release.xcconfig"; path = "Pods/Target Support Files/Pods-Qwerty Systems/Pods-Qwerty Systems.release.xcconfig"; sourceTree = "<group>"; };
+		78B20D8586655E4ED775A605 /* Pods-Qwerty SystemsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qwerty SystemsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Qwerty SystemsUITests/Pods-Qwerty SystemsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		99E42D452260EB9800AB501B /* Qwerty Systems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Qwerty Systems.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E42D482260EB9800AB501B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99E42D4A2260EB9900AB501B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +64,9 @@
 		99E42D7A2260FA6500AB501B /* VideoInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoInfoTableViewCell.swift; sourceTree = "<group>"; };
 		99E42D7E2260FF2500AB501B /* VideoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoItem.swift; sourceTree = "<group>"; };
 		99E42D802261183D00AB501B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B016A2286E3314DAE7275AED /* Pods_Qwerty_Systems.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qwerty_Systems.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7FCED33B9B358FEC6AB967B /* Pods_Qwerty_SystemsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qwerty_SystemsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2F3454086CE33859BBC497E /* Pods_Qwerty_SystemsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qwerty_SystemsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7115D0965D13B039572D691B /* Pods_Qwerty_Systems.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6754B10B1A6880C12C21D853 /* Pods_Qwerty_SystemsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +90,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BE153175DB3E32047AD7A20 /* Pods_Qwerty_SystemsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C72BB456338708AE0B43A9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B016A2286E3314DAE7275AED /* Pods_Qwerty_Systems.framework */,
+				C7FCED33B9B358FEC6AB967B /* Pods_Qwerty_SystemsTests.framework */,
+				E2F3454086CE33859BBC497E /* Pods_Qwerty_SystemsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		99E42D3C2260EB9800AB501B = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +114,8 @@
 				99E42D5C2260EBE200AB501B /* Qwerty SystemsTests */,
 				99E42D672260EBE200AB501B /* Qwerty SystemsUITests */,
 				99E42D462260EB9800AB501B /* Products */,
+				99F8880168A793D4D7478A04 /* Pods */,
+				1C72BB456338708AE0B43A9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +188,19 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		99F8880168A793D4D7478A04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64E6D1E3F6DE390C70ED892F /* Pods-Qwerty Systems.debug.xcconfig */,
+				64ECB7F72B6336B77F718427 /* Pods-Qwerty Systems.release.xcconfig */,
+				22EFA2B83FC7054A366963C2 /* Pods-Qwerty SystemsTests.debug.xcconfig */,
+				0746161BD450B671BE805857 /* Pods-Qwerty SystemsTests.release.xcconfig */,
+				33A53B6EBD0D0C427267480D /* Pods-Qwerty SystemsUITests.debug.xcconfig */,
+				78B20D8586655E4ED775A605 /* Pods-Qwerty SystemsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99E42D6D2260EBE200AB501B /* Build configuration list for PBXNativeTarget "Qwerty Systems" */;
 			buildPhases = (
+				2F3F6CD3D791DA73EBBAF2C8 /* [CP] Check Pods Manifest.lock */,
 				99E42D412260EB9800AB501B /* Sources */,
 				99E42D422260EB9800AB501B /* Frameworks */,
 				99E42D432260EB9800AB501B /* Resources */,
+				7108BF45AAC6E6FEC58B5472 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99E42D702260EBE200AB501B /* Build configuration list for PBXNativeTarget "Qwerty SystemsTests" */;
 			buildPhases = (
+				11989912B70D73DE82F8B230 /* [CP] Check Pods Manifest.lock */,
 				99E42D552260EBE200AB501B /* Sources */,
 				99E42D562260EBE200AB501B /* Frameworks */,
 				99E42D572260EBE200AB501B /* Resources */,
@@ -203,6 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99E42D732260EBE200AB501B /* Build configuration list for PBXNativeTarget "Qwerty SystemsUITests" */;
 			buildPhases = (
+				83121C2080E6076BB5677111 /* [CP] Check Pods Manifest.lock */,
 				99E42D602260EBE200AB501B /* Sources */,
 				99E42D612260EBE200AB501B /* Frameworks */,
 				99E42D622260EBE200AB501B /* Resources */,
@@ -286,6 +330,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11989912B70D73DE82F8B230 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Qwerty SystemsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F3F6CD3D791DA73EBBAF2C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Qwerty Systems-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7108BF45AAC6E6FEC58B5472 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Qwerty Systems/Pods-Qwerty Systems-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Qwerty Systems/Pods-Qwerty Systems-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83121C2080E6076BB5677111 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Qwerty SystemsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99E42D412260EB9800AB501B /* Sources */ = {
@@ -470,6 +605,7 @@
 		};
 		99E42D6E2260EBE200AB501B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64E6D1E3F6DE390C70ED892F /* Pods-Qwerty Systems.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -488,6 +624,7 @@
 		};
 		99E42D6F2260EBE200AB501B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64ECB7F72B6336B77F718427 /* Pods-Qwerty Systems.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -506,6 +643,7 @@
 		};
 		99E42D712260EBE200AB501B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22EFA2B83FC7054A366963C2 /* Pods-Qwerty SystemsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -526,6 +664,7 @@
 		};
 		99E42D722260EBE200AB501B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0746161BD450B671BE805857 /* Pods-Qwerty SystemsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -546,6 +685,7 @@
 		};
 		99E42D742260EBE200AB501B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33A53B6EBD0D0C427267480D /* Pods-Qwerty SystemsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -565,6 +705,7 @@
 		};
 		99E42D752260EBE200AB501B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78B20D8586655E4ED775A605 /* Pods-Qwerty SystemsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
