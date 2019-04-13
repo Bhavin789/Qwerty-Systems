@@ -30,46 +30,20 @@ class VideoListTableViewController: UITableViewController {
                 return
             }
             
-            print(urlString)
-            
             let json = JSON(taskData)
-            print(json)
+//            print(json)
             
-            let firstName = json["datajson"]["customer"]["firstname"].string
-            let lastName = json["datajson"]["customer"]["lastname"].string
-            let id = json["datajson"]["customer"]["id"].string
-            let token = json["datajson"]["customer"]["secure_key"].string
-            let mail = json["datajson"]["customer"]["email"].string
-            let cust = json["datajson"]["customer"]
+            let items = json["items"].arrayValue
+            print(items[0])
             
-            print(cust)
-            //var custo = json["datajson"]["customer"]
-            
-            if (cust != JSON.null){
-                if let fname = firstName, let lname = lastName, let userid = id, let userToken = token, let mailid = mail{
-                    
-                    var nameString = "\(fname) \(lname)"
-                    print(nameString)
-                    
-                    if (userToken.characters.count > 0){
-                        UserDefaults.standard.set(userToken, forKey: "token")
-                        UserDefaults.standard.set(userid, forKey: "UserID")
-                        UserDefaults.standard.set(nameString, forKey: "name")
-                        UserDefaults.standard.set(mailid, forKey: "Email")
-                        DispatchQueue.main.async {
-                            let delegate = UIApplication.shared.delegate as! AppDelegate
-                            delegate.afterLogin()
-                        }
-                    }
-                }
-            }else{
-                var message = json["datajson"].string
-                if let msg = message{
-                    DispatchQueue.main.async {
-                        self.showAlert(msg)
-                    }
-                }
+            for item in items{
+                let videoItem = VideoItem(fromJson: item)
+                self.videoItems.append(videoItem!)
             }
+            
+            DispatchQueue.main.async(execute: {
+                self.tableView.reloadData()
+            })
         }
         task.resume()
     }
@@ -77,15 +51,11 @@ class VideoListTableViewController: UITableViewController {
     func fetchVideoList(){
         let videoItemURL = "https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=UCsUMcnDeIrOYKRSybB1yq2Q&maxResults=30&key=AIzaSyAdcqx0IjC2uNSccq1v_YRx8IGD5gmEvNg"
         callWebService(webURL: videoItemURL)
-        videoItems = [VideoItem()]
-        DispatchQueue.main.async(execute: {
-            self.tableView.reloadData()
-        })
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.title = "Qwerty Systems"
         tableView.register(VideoInfoTableViewCell.self, forCellReuseIdentifier: cellId)
     }
     

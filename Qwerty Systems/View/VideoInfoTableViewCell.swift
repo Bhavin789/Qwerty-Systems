@@ -22,7 +22,6 @@ class VideoInfoTableViewCell: UITableViewCell {
         let videoImage = UIImageView()
         videoImage.image = UIImage(named: "initialProfileImage")
         videoImage.translatesAutoresizingMaskIntoConstraints = false
-        videoImage.layer.cornerRadius = 20
         videoImage.layer.masksToBounds = true
         return videoImage
     }()
@@ -51,6 +50,7 @@ class VideoInfoTableViewCell: UITableViewCell {
         videoImage.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         videoImage.widthAnchor.constraint(equalToConstant: 40).isActive = true
         videoImage.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        videoImage.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
         
     }
     
